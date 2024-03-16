@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:qrscanner/reg1.dart';
 
+import 'Next.dart';
 import 'loginscreen.dart';
 
 void main() {

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:qr_flutter/qr_flutter.dart';
+import 'package:qrscanner/flower.dart';
 
 class Qrsc extends StatefulWidget {
   const Qrsc({Key? key}) : super(key: key);
@@ -32,7 +33,9 @@ class _QrscState extends State<Qrsc> {
               SizedBox(height: 50),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(primary: Colors.teal),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context){return FlowerPot();}));
+                },
                 child: const Text(
                   'SCAN',
                   style: TextStyle(color: Colors.white),
