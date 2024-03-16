@@ -28,11 +28,11 @@ class _QrscState extends State<Qrsc> {
               QrImageView(
                 data: '9447150819',
                 version: QrVersions.auto,
-                size: 200.0,
+                size: 200,
               ),
               SizedBox(height: 50),
               ElevatedButton(
-                style: ElevatedButton.styleFrom(primary: Colors.teal),
+                style: ElevatedButton.styleFrom(),
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context){return FlowerPot();}));
                 },
